@@ -1,6 +1,6 @@
-# Reddit Cleaner App
+# Gestionnaire de commentaires Reddit
 
-![Reddit Cleaner](app/static/reddit-cleaner-banner.png)
+![Capture d'écran de l'application](app/static/screenshot.png)
 
 Une application web permettant de gérer et nettoyer facilement vos commentaires Reddit.
 
@@ -59,22 +59,3 @@ docker compose up --build
 ```
 
 L'application sera accessible à l'adresse [http://localhost:5002](http://localhost:5002)
-
-## 📸 Captures d'écran
-
-![Capture d'écran de l'application](app/static/screenshot.png)
-
-## 🤝 Contribution
-
-Les contributions sont les bienvenues ! N'hésitez pas à ouvrir une issue ou à soumettre une pull request.
-
-## 📄 Licence
-
-Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
-
-## 🙏 Remerciements
-
-- [Reddit API](https://www.reddit.com/dev/api/) pour l'accès aux données
-- [PRAW](https://praw.readthedocs.io/) pour simplifier l'utilisation de l'API Reddit
-- [Flask](https://flask.palletsprojects.com/) pour le framework web
-- [Tailwind CSS](https://tailwindcss.com/) pour le design de l'interface
