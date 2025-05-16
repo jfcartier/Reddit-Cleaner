@@ -1,0 +1,9 @@
+services:
+  reddit-cleaner:
+    build: .
+    ports:
+      - "5002:5000"
+    env_file: .env
+    volumes:
+      - ./app:/app
+    restart: unless-stopped

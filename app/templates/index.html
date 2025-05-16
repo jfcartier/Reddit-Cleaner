@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Reddit Cleaner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="/static/script.js"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="w-full flex justify-center items-center min-h-screen">
+        <div id="comment-box" class="bg-white shadow-lg rounded-xl p-8 flex flex-col items-center w-[400px] min-h-[350px]">
+            <!-- En-tête avec thumbnail et info subreddit -->
+            <div class="flex items-center w-full mb-2">
+                <img id="subreddit-thumb" class="rounded-full w-12 h-12 object-cover mr-3 border-2 border-gray-200" src="/static/default-icon.png" alt="thumbnail" />
+                <div>
+                    <span id="subreddit-title" class="text-lg font-bold text-gray-800 block"></span>
+                    <span id="comment-subreddit" class="text-sm text-gray-500 block"></span>
+                </div>
+            </div>
+            
+            <!-- Titre du post cliquable -->
+            <a id="post-link" href="#" target="_blank" rel="noopener noreferrer" class="w-full mt-2 mb-3 text-blue-600 hover:underline text-center block">
+                <span id="post-title" class="font-medium"></span>
+            </a>
+            
+            <!-- Date du commentaire -->
+            <div class="text-gray-500 text-sm w-full mb-3" id="comment-date"></div>
+            
+            <!-- Corps du commentaire -->
+            <div class="w-full">
+                <pre id="comment-body" class="whitespace-pre-wrap text-gray-700 text-base bg-gray-50 rounded p-3 min-h-[80px] w-full">Loading...</pre>
+            </div>
+            
+            <!-- Nombre d'upvotes -->
+            <div class="flex items-center w-full mt-3 mb-4">
+                <svg class="w-5 h-5 text-orange-500 mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a1 1 0 01-.64-.23L3.3 13.49a1 1 0 01-.13-1.41L9.2 3.3a1 1 0 011.6 0l6.03 8.77a1 1 0 01-.13 1.41l-6.06 4.28A1 1 0 0110 18z" clip-rule="evenodd"></path></svg>
+                <span class="text-orange-600 font-semibold" id="comment-upvotes">0</span>
+                <span class="text-xs text-gray-400 ml-1">upvotes</span>
+            </div>
+            
+            <!-- Boutons d'action -->
+            <div class="flex justify-between w-full mt-2">
+                <button onclick="keep()" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mr-2 flex-1">Garder</button>
+                <button onclick="remove()" class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded flex-1">Supprimer</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
