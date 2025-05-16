@@ -4,25 +4,6 @@
 
 Une application web permettant de gérer et nettoyer facilement vos commentaires Reddit.
 
-## 📝 Description
-
-Reddit Cleaner est une application web qui vous permet de consulter et de gérer vos commentaires Reddit de manière efficace et intuitive. L'application affiche vos commentaires dans l'ordre chronologique (du plus ancien au plus récent) et vous permet de les supprimer ou de les conserver.
-
-### Fonctionnalités
-
-- 📋 Affichage chronologique des commentaires (du plus ancien au plus récent)
-- 🖼️ Affichage du thumbnail et du titre du subreddit
-- 📌 Titre du post cliquable (ouvre le post original dans un nouvel onglet)
-- ⏰ Date du commentaire
-- 👍 Nombre d'upvotes
-- 🗑️ Suppression facile des commentaires
-
-## 🛠️ Technologies utilisées
-
-- **Backend**: Python, Flask, PRAW (Reddit API Wrapper)
-- **Frontend**: HTML, CSS (Tailwind CSS), JavaScript
-- **Conteneurisation**: Docker, Docker Compose
-
 ## 📋 Prérequis
 
 - Docker et Docker Compose
@@ -59,3 +40,9 @@ docker compose up --build
 ```
 
 L'application sera accessible à l'adresse [http://localhost:5002](http://localhost:5002)
+
+## 🛠️ Technologies utilisées
+
+- **Backend**: Python, Flask, PRAW (Reddit API Wrapper)
+- **Frontend**: HTML, CSS (Tailwind CSS), JavaScript
+- **Conteneurisation**: Docker, Docker Compose
